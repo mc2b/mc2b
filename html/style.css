@@ -1,0 +1,69 @@
+body {
+    background-color: transparent;
+    overflow: hidden;
+    font-family: 'Consolas', 'Lucida Console', 'Courier New', monospace;
+}
+
+#watch-container {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    background-color: rgba(10, 20, 25, 0.85);
+    border: 2px solid #00e5ff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.5);
+    color: #e0f7fa;
+}
+
+#watch-screen {
+    padding: 20px;
+    /* Scan lines effect */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px
+    );
+    background-size: 100% 3px;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 8px;
+    border-radius: 5px;
+    border-left: 3px solid #00e5ff;
+}
+
+.stat-item i {
+    font-size: 18px;
+    color: #00e5ff;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.stat-item span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Specific colors for critical stats */
+#health-stat { border-left-color: #c0392b; }
+#health-stat i { color: #c0392b; }
+
+#radioactivity-stat, #infection-stat {
+    border-left-color: #f39c12;
+}
+#radioactivity-stat i, #infection-stat i {
+    color: #f39c12;
+}

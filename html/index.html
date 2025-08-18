@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch HUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="watch-container">
+        <div id="watch-screen">
+            <div class="stat-grid">
+                <!-- Column 1 -->
+                <div class="stat-item" id="health-stat">
+                    <i class="fas fa-heart"></i>
+                    <span id="health-value">100</span>
+                </div>
+                <div class="stat-item" id="armor-stat">
+                    <i class="fas fa-shield-alt"></i>
+                    <span id="armor-value">100</span>
+                </div>
+                <div class="stat-item" id="stamina-stat">
+                    <i class="fas fa-running"></i>
+                    <span id="stamina-value">100</span>
+                </div>
+                <div class="stat-item" id="hunger-stat">
+                    <i class="fas fa-hamburger"></i>
+                    <span id="hunger-value">100</span>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="stat-item" id="thirst-stat">
+                    <i class="fas fa-tint"></i>
+                    <span id="thirst-value">100</span>
+                </div>
+                <div class="stat-item" id="hygiene-stat">
+                    <i class="fas fa-soap"></i>
+                    <span id="hygiene-value">100</span>
+                </div>
+                <div class="stat-item" id="radioactivity-stat">
+                    <i class="fas fa-radiation"></i>
+                    <span id="radioactivity-value">0</span>
+                </div>
+                <div class="stat-item" id="infection-stat">
+                    <i class="fas fa-biohazard"></i>
+                    <span id="infection-value">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
